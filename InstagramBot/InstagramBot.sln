@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstagramBot", "InstagramBot\InstagramBot.csproj", "{3165D812-5E54-4BD2-97FC-F8CC11B1B21E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstaBot", "InstaBot\InstaBot.csproj", "{C7DB8CAB-3212-4A46-A4F9-5B3B28BB9921}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3165D812-5E54-4BD2-97FC-F8CC11B1B21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3165D812-5E54-4BD2-97FC-F8CC11B1B21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3165D812-5E54-4BD2-97FC-F8CC11B1B21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3165D812-5E54-4BD2-97FC-F8CC11B1B21E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7DB8CAB-3212-4A46-A4F9-5B3B28BB9921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7DB8CAB-3212-4A46-A4F9-5B3B28BB9921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7DB8CAB-3212-4A46-A4F9-5B3B28BB9921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7DB8CAB-3212-4A46-A4F9-5B3B28BB9921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jonas\\Desktop\\InstagramBot\\InstagramBot\\InstagramBot.csproj": {}
+    "C:\\Users\\Jonas\\Documents\\GitHub\\Instagram-Bot\\InstagramBot\\InstagramBot\\InstagramBot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jonas\\Desktop\\InstagramBot\\InstagramBot\\InstagramBot.csproj": {
+    "C:\\Users\\Jonas\\Documents\\GitHub\\Instagram-Bot\\InstagramBot\\InstagramBot\\InstagramBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jonas\\Desktop\\InstagramBot\\InstagramBot\\InstagramBot.csproj",
+        "projectUniqueName": "C:\\Users\\Jonas\\Documents\\GitHub\\Instagram-Bot\\InstagramBot\\InstagramBot\\InstagramBot.csproj",
         "projectName": "InstagramBot",
-        "projectPath": "C:\\Users\\Jonas\\Desktop\\InstagramBot\\InstagramBot\\InstagramBot.csproj",
+        "projectPath": "C:\\Users\\Jonas\\Documents\\GitHub\\Instagram-Bot\\InstagramBot\\InstagramBot\\InstagramBot.csproj",
         "packagesPath": "C:\\Users\\Jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jonas\\Desktop\\InstagramBot\\InstagramBot\\obj\\",
+        "outputPath": "C:\\Users\\Jonas\\Documents\\GitHub\\Instagram-Bot\\InstagramBot\\InstagramBot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

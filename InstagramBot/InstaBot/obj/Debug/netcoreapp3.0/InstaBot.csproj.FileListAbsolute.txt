@@ -1,0 +1,17 @@
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\bin\Debug\netcoreapp3.0\InstaBot.exe
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\obj\Debug\netcoreapp3.0\InstaBot.AssemblyInfoInputs.cache
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\obj\Debug\netcoreapp3.0\InstaBot.AssemblyInfo.cs
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\bin\Debug\netcoreapp3.0\InstaBot.deps.json
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\bin\Debug\netcoreapp3.0\InstaBot.runtimeconfig.json
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\bin\Debug\netcoreapp3.0\InstaBot.runtimeconfig.dev.json
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\bin\Debug\netcoreapp3.0\InstaBot.dll
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\bin\Debug\netcoreapp3.0\InstaBot.pdb
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\bin\Debug\netcoreapp3.0\WebDriver.dll
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\obj\Debug\netcoreapp3.0\InstaBot.csprojAssemblyReference.cache
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\obj\Debug\netcoreapp3.0\InstaBot.csproj.CopyComplete
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\obj\Debug\netcoreapp3.0\InstaBot.dll
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\obj\Debug\netcoreapp3.0\InstaBot.pdb
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\bin\Debug\netcoreapp3.0\WebDriver.Support.dll
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\bin\Debug\netcoreapp3.0\Selenium.WebDriver.WaitExtensions.dll
+C:\Users\Jonas\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\bin\Debug\netcoreapp3.0\SeleniumExtras.WaitHelpers.dll
