@@ -1,0 +1,7 @@
+C:\Users\Jonas\Desktop\InstagramBot\InstagramBot\bin\Debug\netcoreapp3.0\InstagramBot.exe
+C:\Users\Jonas\Desktop\InstagramBot\InstagramBot\obj\Debug\netcoreapp3.0\InstagramBot.csprojAssemblyReference.cache
+C:\Users\Jonas\Desktop\InstagramBot\InstagramBot\obj\Debug\netcoreapp3.0\InstagramBot.AssemblyInfoInputs.cache
+C:\Users\Jonas\Desktop\InstagramBot\InstagramBot\obj\Debug\netcoreapp3.0\InstagramBot.AssemblyInfo.cs
+C:\Users\Jonas\Desktop\InstagramBot\InstagramBot\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Jonas\Desktop\InstagramBot\InstagramBot\bin\Debug\netcoreapp3.0\WebDriver.dll
+C:\Users\Jonas\Desktop\InstagramBot\InstagramBot\obj\Debug\netcoreapp3.0\InstagramBot.csproj.CopyComplete
