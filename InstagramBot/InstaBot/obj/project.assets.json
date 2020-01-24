@@ -5284,6 +5284,7 @@
     ".NETCoreApp,Version=v3.0": [
       "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
       "Selenium.Chrome.WebDriver >= 79.0.0",
+      "Selenium.Support >= 3.141.0",
       "Selenium.WebDriver >= 3.141.0",
       "Selenium.WebDriver.ChromeDriver >= 79.0.3945.3600",
       "Selenium.WebDriver.WaitExtensions >= 2.0.0"
@@ -5338,6 +5339,10 @@
           "Selenium.Chrome.WebDriver": {
             "target": "Package",
             "version": "[79.0.0, )"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[3.141.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
