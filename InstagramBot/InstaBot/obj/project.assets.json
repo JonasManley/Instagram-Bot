@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.0": {
+    "net5.0": {
       "DotNetSeleniumExtras.WaitHelpers/3.11.0": {
         "type": "package",
         "dependencies": {
@@ -307,7 +307,7 @@
           }
         }
       },
-      "Selenium.Chrome.WebDriver/79.0.0": {
+      "Selenium.Chrome.WebDriver/85.0.0": {
         "type": "package",
         "build": {
           "build/Selenium.Chrome.WebDriver.targets": {}
@@ -337,10 +337,16 @@
           "lib/netstandard2.0/WebDriver.dll": {}
         }
       },
-      "Selenium.WebDriver.ChromeDriver/79.0.3945.3600": {
+      "Selenium.WebDriver.ChromeDriver/90.0.4430.2400": {
         "type": "package",
         "build": {
           "build/Selenium.WebDriver.ChromeDriver.targets": {}
+        }
+      },
+      "Selenium.WebDriver.IEDriver/3.150.1.2": {
+        "type": "package",
+        "build": {
+          "build/Selenium.WebDriver.IEDriver.targets": {}
         }
       },
       "Selenium.WebDriver.WaitExtensions/2.0.0": {
@@ -1851,16 +1857,16 @@
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
       ]
     },
-    "Selenium.Chrome.WebDriver/79.0.0": {
-      "sha512": "BKamee/fxFy7+hvQD7rXMWaYxdrSQDZHevT5NeMeDCqD2c1jsFh0zAbGR56usfWOpuIJT8RC6TWDkcSQjeWS6A==",
+    "Selenium.Chrome.WebDriver/85.0.0": {
+      "sha512": "wRg7it2bBMyYtOsarTy0bWtS2fCZI08KGTef2kH381DYpGP+wX8j6f/7ABv1nmrUj5CCVmTeDeYeXS5g00JXSw==",
       "type": "package",
-      "path": "selenium.chrome.webdriver/79.0.0",
+      "path": "selenium.chrome.webdriver/85.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/Selenium.Chrome.WebDriver.targets",
         "driver/chromedriver.exe",
-        "selenium.chrome.webdriver.79.0.0.nupkg.sha512",
+        "selenium.chrome.webdriver.85.0.0.nupkg.sha512",
         "selenium.chrome.webdriver.nuspec"
       ]
     },
@@ -1902,19 +1908,36 @@
         "selenium.webdriver.nuspec"
       ]
     },
-    "Selenium.WebDriver.ChromeDriver/79.0.3945.3600": {
-      "sha512": "ng2VdpBOI4ciRJpcT7mxgEBU9FGYZ+T7reHdgrqKXoKJtTRZvqKee4qxRPdkBSGxAZKcg9wzgKr3E7YEfacy/Q==",
+    "Selenium.WebDriver.ChromeDriver/90.0.4430.2400": {
+      "sha512": "poYw2JgVJ8obMYUSnfuucxQMrMusQiA3H2dXhw3bOaFm/bweTEAvhK8RVq+5zfjmTaj7COMYfIjhWJU0rPUabQ==",
       "type": "package",
-      "path": "selenium.webdriver.chromedriver/79.0.3945.3600",
+      "path": "selenium.webdriver.chromedriver/90.0.4430.2400",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "build/DefinePropertiesChromeDriver.targets",
         "build/Selenium.WebDriver.ChromeDriver.targets",
         "driver/linux64/chromedriver",
         "driver/mac64/chromedriver",
         "driver/win32/chromedriver.exe",
-        "selenium.webdriver.chromedriver.79.0.3945.3600.nupkg.sha512",
+        "nupkg-icon.png",
+        "selenium.webdriver.chromedriver.90.0.4430.2400.nupkg.sha512",
         "selenium.webdriver.chromedriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriver.IEDriver/3.150.1.2": {
+      "sha512": "mesqb+Gxb1YxI/tzkdhrP3zMbPky11ErP+nfJCIexiDS+CoGC85xJl+9/dQsN/5AX/boq0lUydaavjGusPJSnw==",
+      "type": "package",
+      "path": "selenium.webdriver.iedriver/3.150.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/DefinePropertiesIEDriver.targets",
+        "build/Selenium.WebDriver.IEDriver.targets",
+        "driver/IEDriverServer.exe",
+        "nupkg-icon.png",
+        "selenium.webdriver.iedriver.3.150.1.2.nupkg.sha512",
+        "selenium.webdriver.iedriver.nuspec"
       ]
     },
     "Selenium.WebDriver.WaitExtensions/2.0.0": {
@@ -5281,45 +5304,52 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.0": [
+    "net5.0": [
       "DotNetSeleniumExtras.WaitHelpers >= 3.11.0",
-      "Selenium.Chrome.WebDriver >= 79.0.0",
+      "Selenium.Chrome.WebDriver >= 85.0.0",
       "Selenium.Support >= 3.141.0",
       "Selenium.WebDriver >= 3.141.0",
-      "Selenium.WebDriver.ChromeDriver >= 79.0.3945.3600",
+      "Selenium.WebDriver.ChromeDriver >= 90.0.4430.2400",
+      "Selenium.WebDriver.IEDriver >= 3.150.1.2",
       "Selenium.WebDriver.WaitExtensions >= 2.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jonas\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\xjmp\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jonas\\Documents\\GitHub\\Instagram-Bot\\InstagramBot\\InstaBot\\InstaBot.csproj",
+      "projectUniqueName": "C:\\Users\\xjmp\\Documents\\GitHub\\Instagram-Bot\\InstagramBot\\InstaBot\\InstaBot.csproj",
       "projectName": "InstaBot",
-      "projectPath": "C:\\Users\\Jonas\\Documents\\GitHub\\Instagram-Bot\\InstagramBot\\InstaBot\\InstaBot.csproj",
-      "packagesPath": "C:\\Users\\Jonas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jonas\\Documents\\GitHub\\Instagram-Bot\\InstagramBot\\InstaBot\\obj\\",
+      "projectPath": "C:\\Users\\xjmp\\Documents\\GitHub\\Instagram-Bot\\InstagramBot\\InstaBot\\InstaBot.csproj",
+      "packagesPath": "C:\\Users\\xjmp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\xjmp\\Documents\\GitHub\\Instagram-Bot\\InstagramBot\\InstaBot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jonas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\xjmp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress .NET Core Desktop 20.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.0"
+        "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\DevExpress 20.2\\.NET Core Desktop Libraries\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/FaradayContract/_packaging/FaradayContractFeed/nuget/v3/index.json": {}
+        "https://pensiondanmark.pkgs.visualstudio.com/_packaging/PensionDanmark/nuget/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.0": {
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -5330,7 +5360,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.0": {
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "DotNetSeleniumExtras.WaitHelpers": {
             "target": "Package",
@@ -5338,7 +5369,7 @@
           },
           "Selenium.Chrome.WebDriver": {
             "target": "Package",
-            "version": "[79.0.0, )"
+            "version": "[85.0.0, )"
           },
           "Selenium.Support": {
             "target": "Package",
@@ -5350,7 +5381,11 @@
           },
           "Selenium.WebDriver.ChromeDriver": {
             "target": "Package",
-            "version": "[79.0.3945.3600, )"
+            "version": "[90.0.4430.2400, )"
+          },
+          "Selenium.WebDriver.IEDriver": {
+            "target": "Package",
+            "version": "[3.150.1.2, )"
           },
           "Selenium.WebDriver.WaitExtensions": {
             "target": "Package",
@@ -5372,7 +5407,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

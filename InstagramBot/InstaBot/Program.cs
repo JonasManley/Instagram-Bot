@@ -1,7 +1,8 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Interactions;
 using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Threading;
 
 namespace InstaBot
@@ -17,8 +18,11 @@ namespace InstaBot
         // OBS functionallity need, the option to change between a list of tags. 
         static string username = "runners_space_life";
         static string password = "Test123456";
-        static string searchTag = "Løb";
+        static List<string> searchTag = new List<string> { "run", "runner", "running", "runs"};
+        static Random random = new Random();
+        static IWebDriver driver = new ChromeDriver("C:\\Users\\xjmp\\Documents\\GitHub\\Instagram-Bot\\InstagramBot");
         //-----------------------------------------------------------------------------------//
+
 
 
         /// <summary>
@@ -27,37 +31,76 @@ namespace InstaBot
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            IWebDriver driver = new ChromeDriver();
-
-            //Logging in
+            //Logging in writting one letter at the time
             driver.Navigate().GoToUrl(url);
-            Thread.Sleep(1000);
-            driver.FindElement(By.Name("username")).SendKeys(username);
-            Thread.Sleep(200);
-            driver.FindElement(By.Name("password")).SendKeys(password);
-            Thread.Sleep(200);
-            driver.FindElement(By.CssSelector("button[class='sqdOP  L3NKy   y3zKF     ']")).Click();
-            Thread.Sleep(2000);
+            Thread.Sleep(10000);
+
+            bool acceptConditions = driver.FindElement(By.XPath("/html/body/div[2]/div/div/div/div")).Displayed;
+            if(acceptConditions = true)
+            {
+                driver.FindElement(By.XPath("/html/body/div[2]/div/div/button[1]")).Click();
+                Thread.Sleep(random.Next(2250, 4120));
+            }
+            Thread.Sleep(random.Next(2250, 3120));
+
+            RealWritter(username, "//*[@id='loginForm']/div/div[1]/div/label/input");
+            Thread.Sleep(random.Next(1250, 3523));
+            RealWritter(password, "//*[@id='loginForm']/div/div[2]/div/label/input");
+            Thread.Sleep(random.Next(3250, 5241));
+            driver.FindElement(By.CssSelector("button[class='sqdOP  L3NKy   y3zKF     ']")).Click();  // Login button
+            Thread.Sleep(random.Next(1250, 2900));
             //End
 
 
             //Search the hashtag
-            var searchbox = driver.FindElement(By.CssSelector("#react-root > section > nav > div._8MQSO.Cx7Bp > div > div > div.LWmhU._0aCwM > input"));
-            searchbox.SendKeys(searchTag);
-            Thread.Sleep(2000);
-            driver.FindElement(By.CssSelector("#react-root > section > nav > div._8MQSO.Cx7Bp > div > div > div.LWmhU._0aCwM > div:nth-child(4) > div.drKGC > div > a:nth-child(1)")).Click();
-            Thread.Sleep(2000);
+            Thread.Sleep(random.Next(4521,12120));
+            bool isElementDisplayed = driver.FindElement(By.XPath("/html/body/div[4]/div/div/div")).Displayed;
+            Thread.Sleep(random.Next(1250, 2900));
 
+            if (isElementDisplayed == true)
+            {
+                driver.FindElement(By.ClassName("piCib")).Click();
+                Thread.Sleep(random.Next(4210, 7210));
+            }
+
+                var searchbox = driver.FindElement(By.CssSelector("#react-root > section > nav > div._8MQSO.Cx7Bp > div > div > div.LWmhU._0aCwM > input"));
+                var indexOfHashtag = random.Next(0, searchTag.Count);
+                searchbox.SendKeys(searchTag[indexOfHashtag]);
+                Thread.Sleep(random.Next(1750, 3257));
+                driver.FindElement(By.CssSelector("#react-root > section > nav > div._8MQSO.Cx7Bp > div > div > div.LWmhU._0aCwM > div:nth-child(4) > div.drKGC > div > a:nth-child(1)")).Click();  // Search button
+                Thread.Sleep(2000);
+
+                Console.ReadLine();
+
+           
+            
 
             //Like and follow
             int row = 1;
-            int drivingCondition = 1; 
-           
+            int drivingCondition = 1;
+
+            var weigthedNumber = new List<string> { "1", "1", "1", "1", "1", "1", "2", "3", "4", "5", };
+            var randomPickedNumber = random.Next(1, 10);
+
+            switch (Int32.Parse(weigthedNumber[randomPickedNumber]))
+            {
+                case 1: // See the pickture but clicks away
+                    return;
+                case 2: // likes the pictures and go further 
+                    return;
+                case 3: // Likes the picutre and follow the person 
+                    // remeber to add follow to a list, so the person can be unfollowed later (like 10 days later)
+                    return;
+                case 4: // Writes a comment to the picture 
+                    return;
+                case 5: // see picture and clicks around on user profile (1-5 pictures) and follows at the end 
+                    return;
+            }
+
             while (drivingCondition < 2)
             {
                 for (int i = 1; i < 4; i++)
                 {
-                    Random random = new Random();
                     var timeToWait1 = random.Next(3000, 10000);
                     driver.FindElement(By.CssSelector($"#react-root > section > main > article > div:nth-child(3) > div > div:nth-child({row}) > div:nth-child({i})")).Click();
                     Thread.Sleep(timeToWait1);
@@ -71,18 +114,27 @@ namespace InstaBot
                     driver.FindElement(By.CssSelector(" body > div._2dDPU.vCf6V > button.ckWGn")).Click();
                     Thread.Sleep(timeToWait4);
 
-                    
                     var extraWait = random.Next(1, 10);
                     if (extraWait == 2 || extraWait == 6 || extraWait == 1)
                     {
                         var timeToWait5 = random.Next(3000, 60000);
                         Thread.Sleep(timeToWait5);
                     }
-
-
                     row++;
                     drivingCondition++;
                 }
+            }
+        }
+
+        public static void RealWritter(string thingToWrite, string XPath)
+        {
+            var val = thingToWrite.ToCharArray();
+            for (int i = 0; i < thingToWrite.Length; i++)
+            {
+                char c = thingToWrite[i];
+                string newLetter = new StringBuilder().Append(c).ToString();
+                driver.FindElement(By.XPath($"{XPath}")).SendKeys(newLetter);
+                Thread.Sleep(random.Next(55, 250));
             }
         }
     }
