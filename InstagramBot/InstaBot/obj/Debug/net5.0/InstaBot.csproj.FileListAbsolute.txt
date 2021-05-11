@@ -20,3 +20,4 @@ C:\Users\xjmp\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\obj\Debug\net
 C:\Users\xjmp\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\obj\Debug\net5.0\ref\InstaBot.dll
 C:\Users\xjmp\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\obj\Debug\net5.0\InstaBot.pdb
 C:\Users\xjmp\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\obj\Debug\net5.0\InstaBot.genruntimeconfig.cache
+C:\Users\jmp\Documents\GitHub\Instagram-Bot\InstagramBot\InstaBot\bin\Debug\net5.0\WebDriver.dll
